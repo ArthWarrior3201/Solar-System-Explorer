@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111; /* Space dark background outside the app */
+  overflow: hidden;
+}
+
+#divApplab {
+  position: relative;
+  /* This prevents the "Invisible Shield" by making sure the container doesn't block clicks */
+  pointer-events: auto; 
+}
+
+/* Forces buttons and dropdowns to show the "Clicking Hand" cursor */
+button, select, img, input {
+  cursor: pointer !important;
+}
